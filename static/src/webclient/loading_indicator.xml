@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="snk_loading_animation.LoadingIndicator">
+        <Transition visible="state.show" name="'o-fade'" t-slot-scope="transition" leaveDuration="400">
+            <div class="snk_loading_indicator" 
+                 t-att-class="transition.className + ' ' + positionClass + ' ' + animationClass"
+                 t-att-style="'--snk-primary-color: ' + config.color + '; --snk-bg-color: ' + config.bgColor">
+                
+                <!-- Default Odoo Style -->
+                <span t-if="config.type === 'default'" class="o_loading_indicator">
+                    Loading<t t-if="env.debug" t-esc="' (' + state.count + ')'"/>
+                </span>
+                
+                <!-- Spinner Animations -->
+                <div t-if="config.type === 'spinner_1'" class="snk-spinner-1"></div>
+                <div t-if="config.type === 'spinner_2'" class="snk-spinner-2"></div>
+                <div t-if="config.type === 'spinner_3'" class="snk-spinner-3"></div>
+                <div t-if="config.type === 'spinner_4'" class="snk-spinner-4"></div>
+                <div t-if="config.type === 'spinner_5'" class="snk-spinner-5"></div>
+                
+                <!-- Progress Animations -->
+                <div t-if="config.type === 'progress_1'" class="snk-progress-1"></div>
+                <div t-if="config.type === 'progress_2'" class="snk-progress-2"></div>
+                <div t-if="config.type === 'progress_3'" class="snk-progress-3"></div>
+                <div t-if="config.type === 'progress_4'" class="snk-progress-4"></div>
+                <div t-if="config.type === 'progress_5'" class="snk-progress-5"></div>
+                
+                <!-- Wobbling Animations -->
+                <div t-if="config.type === 'wobbling_1'" class="snk-wobbling-1"></div>
+                <div t-if="config.type === 'wobbling_2'" class="snk-wobbling-2"></div>
+                <div t-if="config.type === 'wobbling_3'" class="snk-wobbling-3"></div>
+                
+                <!-- Wavy Animations -->
+                <div t-if="config.type === 'wavy_1'" class="snk-wavy-1"></div>
+                <div t-if="config.type === 'wavy_2'" class="snk-wavy-2"></div>
+                <div t-if="config.type === 'wavy_3'" class="snk-wavy-3"></div>
+                <div t-if="config.type === 'wavy_4'" class="snk-wavy-4"></div>
+                <div t-if="config.type === 'wavy_5'" class="snk-wavy-5"></div>
+                
+                <!-- Filling Animations -->
+                <div t-if="config.type === 'filling_1'" class="snk-filling-1"></div>
+                <div t-if="config.type === 'filling_2'" class="snk-filling-2"></div>
+                <div t-if="config.type === 'filling_3'" class="snk-filling-3"></div>
+                <div t-if="config.type === 'filling_4'" class="snk-filling-4"></div>
+                <div t-if="config.type === 'filling_5'" class="snk-filling-5"></div>
+                
+                <!-- Continuous Animations -->
+                <div t-if="config.type === 'continuous_1'" class="snk-continuous-1"></div>
+                <div t-if="config.type === 'continuous_2'" class="snk-continuous-2"></div>
+                
+                <!-- Circle Animations -->
+                <div t-if="config.type === 'circle_1'" class="snk-circle-1"></div>
+                <div t-if="config.type === 'circle_2'" class="snk-circle-2"></div>
+                <div t-if="config.type === 'circle_3'" class="snk-circle-3"></div>
+                <div t-if="config.type === 'circle_4'" class="snk-circle-4"></div>
+                <div t-if="config.type === 'circle_5'" class="snk-circle-5"></div>
+                <div t-if="config.type === 'circle_6'" class="snk-circle-6"></div>
+                
+                <!-- Nature Animations -->
+                <div t-if="config.type === 'nature_1'" class="snk-nature-1"></div>
+                <div t-if="config.type === 'nature_2'" class="snk-nature-2"></div>
+                <div t-if="config.type === 'nature_3'" class="snk-nature-3"></div>
+                <div t-if="config.type === 'nature_4'" class="snk-nature-4"></div>
+                <div t-if="config.type === 'nature_5'" class="snk-nature-5"></div>
+                
+                <!-- Time Animations -->
+                <div t-if="config.type === 'time_1'" class="snk-time-1"></div>
+                <div t-if="config.type === 'time_2'" class="snk-time-2"></div>
+                <div t-if="config.type === 'time_3'" class="snk-time-3"></div>
+                <div t-if="config.type === 'time_4'" class="snk-time-4"></div>
+                
+                <!-- Factory Animations -->
+                <div t-if="config.type === 'factory_1'" class="snk-factory-1"></div>
+                <div t-if="config.type === 'factory_2'" class="snk-factory-2"></div>
+                <div t-if="config.type === 'factory_3'" class="snk-factory-3"></div>
+                <div t-if="config.type === 'factory_4'" class="snk-factory-4"></div>
+                <div t-if="config.type === 'factory_5'" class="snk-factory-5"></div>
+                <div t-if="config.type === 'factory_6'" class="snk-factory-6"></div>
+                
+                <!-- Loading Text -->
+                <div t-if="config.showText and config.type !== 'default'" class="snk-loading-text">
+                    <span t-esc="config.text"/>
+                    <t t-if="env.debug">
+                        <span class="snk-debug-count"> (<t t-esc="state.count"/>)</span>
+                    </t>
+                </div>
+            </div>
+        </Transition>
+    </t>
+
+</templates>
