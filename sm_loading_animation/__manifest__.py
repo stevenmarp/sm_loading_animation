@@ -102,7 +102,7 @@ Transform your Odoo 18 user experience with 56 stunning pure CSS loading animati
     'installable': True,
     'application': False,
     'auto_install': False,
-    'price': 39.00,
+    'price': 79.00,
     'currency': 'USD',
     'maintainer': 'stevenmarp',
     'contributors': [
