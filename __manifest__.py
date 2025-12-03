@@ -76,7 +76,7 @@ Transform your Odoo 18 user experience with 56 stunning pure CSS loading animati
 • Website: 
     """,
     'author': 'Steven Marpaung',
-    'website': '',
+    'website': 'https://github.com/stevenmarp/sm_loading_animation',
     'support': 'stevenoctavianusmarpung@gmail.com',
     'license': 'LGPL-3',
     'depends': ['web', 'base_setup'],
