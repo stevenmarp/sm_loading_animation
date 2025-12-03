@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'SM Custom Loading Animation',
+    'name': 'Loading Animation',
     'version': '18.0.1.0.0',
     'category': 'Tools',
     'summary': '56 Beautiful Pure CSS Loading Animations for Odoo 18 - Customizable Colors, Positions & Text',
