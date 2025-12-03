@@ -92,7 +92,7 @@ Transform your Odoo 18 user experience with 56 stunning pure CSS loading animati
         ],
     },
     'images': [
-        'static/description/banner.png',
+        'static/description/banner.gif',
         'static/description/icon.png',
         'static/description/screenshot_1.png',
         'static/description/screenshot_2.png',
