@@ -5,7 +5,7 @@ from odoo import api, fields, models
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    snk_loading_animation_type = fields.Selection([
+    sm_loading_animation_type = fields.Selection([
         ('default', 'Default Odoo'),
         # Spinner Animations
         ('spinner_1', 'Spinner 1 - Half Circle'),
@@ -64,51 +64,51 @@ class ResConfigSettings(models.TransientModel):
         ('factory_5', 'Factory 5 - Bottle Filling'),
         ('factory_6', 'Factory 6 - Elevator'),
     ], string='Loading Animation Type', default='spinner_1',
-        config_parameter='snk_loading_animation.animation_type')
+        config_parameter='sm_loading_animation.animation_type')
 
-    snk_loading_position = fields.Selection([
+    sm_loading_position = fields.Selection([
         ('bottom-right', 'Bottom Right'),
         ('bottom-left', 'Bottom Left'),
         ('top-right', 'Top Right'),
         ('top-left', 'Top Left'),
         ('center', 'Center Screen'),
     ], string='Loading Position', default='bottom-right',
-        config_parameter='snk_loading_animation.position')
+        config_parameter='sm_loading_animation.position')
 
-    snk_loading_color = fields.Char(
+    sm_loading_color = fields.Char(
         string='Loading Color',
         default='#714B67',
-        config_parameter='snk_loading_animation.color',
+        config_parameter='sm_loading_animation.color',
         help='Primary color for loading animation (hex format)'
     )
 
-    snk_loading_bg_color = fields.Char(
+    sm_loading_bg_color = fields.Char(
         string='Background Color',
         default='#FFFFFF',
-        config_parameter='snk_loading_animation.bg_color',
+        config_parameter='sm_loading_animation.bg_color',
         help='Background color for loading indicator'
     )
 
-    snk_loading_show_text = fields.Boolean(
+    sm_loading_show_text = fields.Boolean(
         string='Show Loading Text',
         default=True,
     )
 
-    snk_loading_text = fields.Char(
+    sm_loading_text = fields.Char(
         string='Loading Text',
         default='Loading...',
-        config_parameter='snk_loading_animation.text'
+        config_parameter='sm_loading_animation.text'
     )
 
     @api.model
     def get_values(self):
         res = super().get_values()
         ICP = self.env['ir.config_parameter'].sudo()
-        show_text = ICP.get_param('snk_loading_animation.show_text', 'True')
-        res['snk_loading_show_text'] = show_text.lower() == 'true'
+        show_text = ICP.get_param('sm_loading_animation.show_text', 'True')
+        res['sm_loading_show_text'] = show_text.lower() == 'true'
         return res
 
     def set_values(self):
         super().set_values()
         ICP = self.env['ir.config_parameter'].sudo()
-        ICP.set_param('snk_loading_animation.show_text', str(self.snk_loading_show_text))
+        ICP.set_param('sm_loading_animation.show_text', str(self.sm_loading_show_text))

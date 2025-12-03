@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
-    <t t-name="snk_loading_animation.LoadingOverlay">
-        <div class="snk-loading-overlay" t-if="props.visible">
-            <div class="snk-loading-overlay-backdrop"/>
-            <div class="snk-loading-overlay-content">
-                <div class="snk-loading-spinner">
-                    <div class="snk-spinner-ring"></div>
-                    <div class="snk-spinner-ring snk-delay-1"></div>
-                    <div class="snk-spinner-ring snk-delay-2"></div>
+    <t t-name="sm_loading_animation.LoadingOverlay">
+        <div class="sm-loading-overlay" t-if="props.visible">
+            <div class="sm-loading-overlay-backdrop"/>
+            <div class="sm-loading-overlay-content">
+                <div class="sm-loading-spinner">
+                    <div class="sm-spinner-ring"></div>
+                    <div class="sm-spinner-ring sm-delay-1"></div>
+                    <div class="sm-spinner-ring sm-delay-2"></div>
                 </div>
-                <div class="snk-loading-overlay-text">
+                <div class="sm-loading-overlay-text">
                     Loading...
                 </div>
             </div>

@@ -24,33 +24,33 @@ patch(LoadingIndicator.prototype, {
                 const params = await this.env.services.orm.call(
                     'ir.config_parameter',
                     'get_param',
-                    ['snk_loading_animation.animation_type', 'spinner_1']
+                    ['sm_loading_animation.animation_type', 'spinner_1']
                 );
                 this.config.type = params || 'spinner_1';
                 
                 this.config.position = await this.env.services.orm.call(
                     'ir.config_parameter', 'get_param',
-                    ['snk_loading_animation.position', 'bottom-right']
+                    ['sm_loading_animation.position', 'bottom-right']
                 ) || 'bottom-right';
                 
                 this.config.color = await this.env.services.orm.call(
                     'ir.config_parameter', 'get_param',
-                    ['snk_loading_animation.color', '#714B67']
+                    ['sm_loading_animation.color', '#714B67']
                 ) || '#714B67';
                 
                 this.config.bgColor = await this.env.services.orm.call(
                     'ir.config_parameter', 'get_param',
-                    ['snk_loading_animation.bg_color', '#FFFFFF']
+                    ['sm_loading_animation.bg_color', '#FFFFFF']
                 ) || '#FFFFFF';
                 
                 this.config.showText = await this.env.services.orm.call(
                     'ir.config_parameter', 'get_param',
-                    ['snk_loading_animation.show_text', 'True']
+                    ['sm_loading_animation.show_text', 'True']
                 ) !== 'False';
                 
                 this.config.text = await this.env.services.orm.call(
                     'ir.config_parameter', 'get_param',
-                    ['snk_loading_animation.text', 'Loading...']
+                    ['sm_loading_animation.text', 'Loading...']
                 ) || 'Loading...';
             } catch (e) {
                 console.log('Loading animation config not loaded, using defaults');
@@ -59,14 +59,14 @@ patch(LoadingIndicator.prototype, {
     },
     
     get positionClass() {
-        return `snk-position-${this.config.position}`;
+        return `sm-position-${this.config.position}`;
     },
     
     get animationClass() {
-        return `snk-animation-${this.config.type}`;
-    },
+        return `sm-animation-${this.config.type}`;
+    }
 });
 
 patch(LoadingIndicator, {
-    template: "snk_loading_animation.LoadingIndicator",
+    template: "sm_loading_animation.LoadingIndicator",
 });

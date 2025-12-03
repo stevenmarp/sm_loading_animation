@@ -1,4 +1,4 @@
-# SNK Custom Loading Animation
+# SM Custom Loading Animation
 
 **Beautiful, modern loading animations for Odoo 18.0**
 
@@ -107,14 +107,13 @@ All animations are pure CSS - **no external libraries or dependencies required!*
 2. Extract to your Odoo addons directory
 3. Restart Odoo server
 4. Go to Apps → Update Apps List
-5. Search for "SNK Custom Loading Animation"
+5. Search for "SM Custom Loading Animation"
 6. Click Install
 
 ### Method 2: Git Clone
 
 ```bash
 cd /path/to/odoo/addons
-git clone https://github.com/sinerka/snk_loading_animation.git
 ```
 
 Then restart Odoo and install from Apps menu.
@@ -176,7 +175,7 @@ Once installed and configured, the custom loading animation will **automatically
 ### Files Structure
 
 ```
-snk_loading_animation/
+sm_loading_animation/
 ├── __init__.py
 ├── __manifest__.py
 ├── models/
@@ -249,9 +248,8 @@ snk_loading_animation/
 
 For support, customization, or feature requests:
 
-- 📧 **Email**: support@sinerka.id
-- 🌐 **Website**: [https://www.sinerka.id](https://www.sinerka.id)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/sinerka/snk_loading_animation/issues)
+- 📧 **Email**: stevenoctavianusmarpaung@gmail.com
+- 🐛 **Issues**: stevenoctavianusmarpaung@gmail.com
 
 ---
 
@@ -269,7 +267,7 @@ You are free to:
 
 ## 👨‍💻 Author
 
-**Sinerka Network**
+**Stevenmarp**
 
 - 🏢 Professional Odoo Implementation Partner
 - 🛠️ Custom Module Development
@@ -285,9 +283,5 @@ If you find this module useful, please rate us on the Odoo Apps Store! Your feed
 ---
 
 <p align="center">
-  Made with ❤️ by <strong>Sinerka Network</strong>
-</p>
-
-<p align="center">
-  <a href="https://www.sinerka.id">www.sinerka.id</a>
+  Made with ❤️ by <strong>Steven Marp</strong>
 </p>

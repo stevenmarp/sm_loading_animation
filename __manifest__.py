@@ -1,14 +1,20 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'SNK Custom Loading Animation',
+    'name': 'SM Custom Loading Animation',
     'version': '18.0.1.0.0',
     'category': 'Tools',
     'summary': '56 Beautiful Pure CSS Loading Animations for Odoo 18 - Customizable Colors, Positions & Text',
     'description': """
-SNK Custom Loading Animation
+SM Custom Loading Animation
 ============================
 
-Transform your Odoo user experience with 56 stunning pure CSS loading animations!
+Transform your Odoo 18 user experience with 56 stunning pure CSS loading animations!
+
+⚠️ COMPATIBILITY
+================
+• Odoo Version: 18.0 ONLY (Community & Enterprise)
+• This module is specifically designed for Odoo 18 and uses the latest OWL framework
+• Not compatible with Odoo 17, 16, 15 or earlier versions
 
 🎯 FEATURES
 ===========
@@ -51,10 +57,11 @@ Transform your Odoo user experience with 56 stunning pure CSS loading animations
 
 🔧 Technical
 -----------
-• Odoo 18.0 (Community & Enterprise)
+• Required Odoo Version: 18.0 (Community & Enterprise)
 • License: LGPL-3
-• Dependencies: web (core module only)
+• Dependencies: web, base_setup (core modules only)
 • Browser Support: Chrome, Firefox, Safari, Edge, Opera
+• Framework: OWL (Odoo Web Library) - Odoo 18 version
 
 💼 Perfect For
 -------------
@@ -65,12 +72,12 @@ Transform your Odoo user experience with 56 stunning pure CSS loading animations
 
 📞 Support
 ---------
-• Email: support@sinerka.id
-• Website: https://www.sinerka.id
+• Email: stevenoctavianusmarpung@gmail.com
+• Website: 
     """,
-    'author': 'Sinerka Network',
-    'website': 'https://www.sinerka.id',
-    'support': 'support@sinerka.id',
+    'author': 'Steven Marpaung',
+    'website': '',
+    'support': 'stevenoctavianusmarpung@gmail.com',
     'license': 'LGPL-3',
     'depends': ['web', 'base_setup'],
     'data': [
@@ -79,18 +86,26 @@ Transform your Odoo user experience with 56 stunning pure CSS loading animations
     ],
     'assets': {
         'web.assets_backend': [
-            'snk_loading_animation/static/src/scss/loading_animation.scss',
-            'snk_loading_animation/static/src/webclient/loading_indicator.xml',
-            'snk_loading_animation/static/src/webclient/loading_indicator.js',
+            'sm_loading_animation/static/src/scss/loading_animation.scss',
+            'sm_loading_animation/static/src/webclient/loading_indicator.xml',
+            'sm_loading_animation/static/src/webclient/loading_indicator.js',
         ],
     },
     'images': [
         'static/description/banner.png',
         'static/description/icon.png',
+        'static/description/screenshot_1.png',
+        'static/description/screenshot_2.png',
+        'static/description/screenshot_3.gif',
+        'static/description/screenshot_4.gif',
     ],
     'installable': True,
     'application': False,
     'auto_install': False,
-    'price': 0.00,
-    'currency': 'EUR',
+    'price': 39.00,
+    'currency': 'USD',
+    'maintainer': 'stevenmarp',
+    'contributors': [
+        'stevenmarp <stevenoctavianusmarpung@gmail.com>',
+    ],
 }
