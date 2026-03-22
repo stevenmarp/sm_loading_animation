@@ -1,20 +1,14 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Loading Animation',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Tools',
-    'summary': '56 Beautiful Pure CSS Loading Animations for Odoo 18 - Customizable Colors, Positions & Text',
+    'summary': '56 Beautiful Pure CSS Loading Animations — Customizable Colors, Positions & Text',
     'description': """
 SM Custom Loading Animation
 ============================
 
-Transform your Odoo 18 user experience with 56 stunning pure CSS loading animations!
-
-⚠️ COMPATIBILITY
-================
-• Odoo Version: 18.0 ONLY (Community & Enterprise)
-• This module is specifically designed for Odoo 18 and uses the latest OWL framework
-• Not compatible with Odoo 17, 16, 15 or earlier versions
+Transform your Odoo user experience with 56 stunning pure CSS loading animations!
 
 🎯 FEATURES
 ===========
@@ -57,11 +51,11 @@ Transform your Odoo 18 user experience with 56 stunning pure CSS loading animati
 
 🔧 Technical
 -----------
-• Required Odoo Version: 18.0 (Community & Enterprise)
+• Odoo Version: 19.0 (Community & Enterprise)
 • License: LGPL-3
 • Dependencies: web, base_setup (core modules only)
 • Browser Support: Chrome, Firefox, Safari, Edge, Opera
-• Framework: OWL (Odoo Web Library) - Odoo 18 version
+• Framework: OWL (Odoo Web Library)
 
 💼 Perfect For
 -------------
@@ -73,9 +67,10 @@ Transform your Odoo 18 user experience with 56 stunning pure CSS loading animati
 📞 Support
 ---------
 • Email: stevenoctavianusmarpung@gmail.com
-• Website: 
+• Website: https://github.com/stevenmarp/sm_loading_animation
     """,
-    'author': 'Steven Marpaung',
+    'author': 'Steven Marp',
+    'website': 'https://github.com/stevenmarp/sm_loading_animation',
     'support': 'stevenoctavianusmarpung@gmail.com',
     'license': 'LGPL-3',
     'depends': ['web', 'base_setup'],
