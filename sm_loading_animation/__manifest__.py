@@ -75,7 +75,7 @@ Transform your Odoo 18 user experience with 56 stunning pure CSS loading animati
 • Email: stevenoctavianusmarpung@gmail.com
 • Website: 
     """,
-    'author': 'Steven Marpaung',
+    'author': 'Steven Marp',
     'support': 'stevenoctavianusmarpung@gmail.com',
     'license': 'LGPL-3',
     'depends': ['web', 'base_setup'],
